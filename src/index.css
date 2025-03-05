@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+/* Mobile optimization */
+html, body {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  user-select: none;
+  overscroll-behavior-y: none;
+}
+
+input, button {
+  font-size: 16px; /* Prevent zoom on focus in iOS */
+}
